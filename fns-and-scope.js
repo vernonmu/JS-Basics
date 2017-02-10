@@ -6,6 +6,16 @@ var name = 'Tyler';
 
   //Code Here
 
+  function isTyler(name) {
+    if (name === "Tyler") {
+      return true;
+    }
+
+    else {
+      return false;
+    }
+  }
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,6 +23,11 @@ var name = 'Tyler';
 
 
   //Code Here
+
+  function getName() {
+    var x = prompt(name);
+    return x;
+  }
 
 
 //////////////////PROBLEM 3////////////////////
@@ -24,6 +39,10 @@ var name = 'Tyler';
 
   //Code Here
 
+  function welcome() {
+    return alert("Welcome, " + getName());
+  }
+
 
 //////////////////PROBLEM 4////////////////////
 
@@ -34,6 +53,8 @@ var name = 'Tyler';
 
   //Answer Here
 
+  // Paramters are defined with a function. Arguments are values passed into functions via function parameters
+
 
 //////////////////PROBLEM 5////////////////////
 
@@ -42,7 +63,8 @@ var name = 'Tyler';
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  // Undefined, Nil, null, NaN, false, 0,
+  // You can check if something is falsy with a conditional statements
 
 
 
@@ -53,14 +75,22 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+
+  function myName() {
+    return "Vernon";
+  }
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+  var newMyName = myName;
+
 //Now alert the result of invoking newMyName
+
+  alert(newMyName());
 
 
 
@@ -72,8 +102,16 @@ var name = 'Tyler';
 
   //Code Here
 
+  function outerFn() {
+    return function () {
+      return "Vernon"
+    }
+  }
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
